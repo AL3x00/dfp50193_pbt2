@@ -9,24 +9,24 @@
 </head>
 
 <body>
-    <form action="changePass_process.php" method="post">
-        <table border="0">
+    <h1>Change Password</h1>
+    <form action="changeprocess.php" method="POST">
+        <table>
             <tr>
                 <td>Current Password: </td>
-                <td><input type="password" name="currentpass"></td>
+                <td><input type="password" id="password" name="password"></td>
             </tr>
             <tr>
                 <td>New Password: </td>
-                <td><input type="password" name="newpass"></td>
+                <td><input type="password" id="newpassword" name="newpassword"></td>
             </tr>
             <tr>
                 <td>Confirm New Password: </td>
-                <td><input type="password" name="confirmpass"></td>
-            </tr>
-            <tr>
-                <td colspan="2"><button type="submit">Edit</button></td>
+                <td><input type="password" id="confirmpass" name="confirmpass"></td>
             </tr>
         </table>
+        <button type="submit">Change</button>
+        <a href="homepage.php">Back to home page</a>
     </form>
 </body>
 
